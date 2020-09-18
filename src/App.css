@@ -1,38 +1,62 @@
 .App {
-  text-align: center;
+  background-image: url('./images/dark.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.img{ 
+  position: absolute;
+  top: 7%;
+} 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .but{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}  */
+
+.but
+{
+  position: absolute;
+  bottom: 5%;
+  margin:25px;
+  display:flex;
+  flex-direction:row;
+  width:100vw;
+  height:40px;
+  margin: auto;
+  padding:5px; /* this */
+}
+.but > button
+{
+  flex:2 1 auto;
+  /* border:2px rgb(179, 251, 197) solid; */
+  text-align:center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin:5px;  /* and that, will result in a 10px gap */
+}
+.button{
+  background-color: #ffffff;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.meter{
+  width: 200px;
+  height: 51px;
+  position: absolute;
+  top: -13500%;
+  left: 35%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text{
+
+ display: block;
+  height: 5px; 
+}
+.meter_div{
+transform: rotate(270deg);
+z-index: 5;
 }
